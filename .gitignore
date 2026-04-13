@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.dev.pid
+workspace/
+data/cache/
+data/logs/
+data/sqlite/
+data/dev-inbox/
+data/dev-outbox/
+data/dev-processed/
+data/dev-inbox-test/
+data/dev-outbox-test/
+data/dev-processed-test/
+data/wechat/
+*.log

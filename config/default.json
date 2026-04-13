@@ -1,0 +1,32 @@
+{
+  "server": {
+    "port": 3100
+  },
+  "claude": {
+    "command": "claude",
+    "outputFormat": "json",
+    "timeoutMs": 180000
+  },
+  "paths": {
+    "dataDir": "./data",
+    "cacheDir": "./data/cache",
+    "logDir": "./data/logs",
+    "dbPath": "./data/sqlite/sessions.json",
+    "workspaceRoot": "./workspace"
+  },
+  "limits": {
+    "maxImageSizeMb": 10,
+    "maxFileSizeMb": 30,
+    "maxReplyChars": 1800
+  },
+  "wechat": {
+    "adapterMode": "local-dev",
+    "pollIntervalMs": 2000,
+    "devInboxDir": "./data/dev-inbox",
+    "devOutboxDir": "./data/dev-outbox",
+    "devProcessedDir": "./data/dev-processed",
+    "sessionFile": "./data/wechat/session.json",
+    "receiptMessage": "已收到，正在处理...",
+    "minReceiptVisibleMs": 1500
+  }
+}

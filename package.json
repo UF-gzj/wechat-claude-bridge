@@ -1,0 +1,34 @@
+{
+  "name": "wechat-claude-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "关镇江原创：一个将微信消息桥接到 Claude Code CLI 的本地可配置项目。",
+  "author": "关镇江",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "doctor": "powershell -ExecutionPolicy Bypass -File ./scripts/doctor.ps1",
+    "clean:cache": "powershell -ExecutionPolicy Bypass -File ./scripts/cleanup-cache.ps1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mammoth": "^1.8.0",
+    "pino": "^9.7.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "wx-clawbot": "^0.0.18",
+    "xlsx": "^0.18.5",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/qrcode-terminal": "^0.12.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
